@@ -1,2 +1,2 @@
 # eMag static only
- practice
+This is only for fun and practice.
