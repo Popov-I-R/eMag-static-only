@@ -20,7 +20,7 @@
 
 
 .navbar-main {
-    width: 1903px;
+    width: 100%;
     height: 56px;
     
     background-color: white;
@@ -37,7 +37,7 @@
     margin-right: auto;
     margin-left:  auto;
     background-color: transparent;
-    width: 1200px;
+    width: 64%;
     /* max-width: 1200px; */
   
     padding-right: 10px;
@@ -165,11 +165,24 @@ form.example input[type=text] {
     align-items: center;
 }
 
-.navbar-left > li {
+
+
+.navbar-left > li > a {
     color: white;
     font-size: 12px;
+    text-decoration: none;
     
     /* font-weight: 600; */
+}
+
+.navbar-left li > a:hover {
+    padding: 5px;
+    border: transparent 1px solid;
+    color: white;
+    border-radius: 16px;
+    background-color: transparent;
+    border-color: white;
+    cursor: pointer;
 }
 
 li.categories {
