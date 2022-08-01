@@ -1,0 +1,2 @@
+# eMag static only
+ practice
