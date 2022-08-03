@@ -1,0 +1,130 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+.main-wrapper {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-areas:
+    "h h h h h h h h h h h h"
+    "sh sh sh sh sh sh sh sh sh sh sh sh"
+    ". . m m m m m m m m . ."
+    ". . cb cb cb cb cb cb cb cb . ."
+    "fd fd fd fd fd fd fd fd fd fd fd fd"
+    "co co co co co co co co co co co co"
+    "f f f f f f f f f f f f";
+}
+
+/* Край на CSS RESET  */
+
+/* Начало дефиниране на грид, основен layout */
+
+body {
+    background-color: #f2f2f7;
+}
+header {
+    grid-area: h;
+    height: 56px;
+    background-color: white;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+}
+
+.second-header {
+    grid-area: sh;
+    height: 56px;
+    background: -webkit-linear-gradient(left,#ff1d25 5%,#a0328c 35%,#7040a4 45%,#4359c7 55%,#0082e6 70%);
+    
+}
+
+main {
+    grid-area: m;
+    background-color: white;
+    height: 457px;
+}
+
+.categories-banner {
+    grid-area: cb;
+    background-color: #f2f2f7;
+    height: 110px;
+}
+
+.flash-deals {
+    grid-area: fd;
+    height: 585px;
+    background: rgb(33, 71, 220)
+}
+
+.categories-offers {
+    grid-area: co;
+    height: 2963px;
+    background-color: #f2f2f7;
+}
+
+footer {
+    grid-area: f;
+    height: 300px;
+    background: #e7eff8;
+}
+
+/* Край на дефиниране на грид, основен layout */
+
+/* Тук започва wrapper-а за съдържанието на хедъра*/
+
+          /* P.S. Да измисля как да си го направя основен wrapper и просто да го ползвам, като клас - Забележка - parent-a трябва да е с display grid и разделен на 12 фракции. */
+
+.header-content {
+    grid-column-start: 3;
+    grid-column-end: 11;
+    background-color: red;
+}
+
+
+
+/* Тук свършва wrapper-а за съдържанието на хедъра*/
