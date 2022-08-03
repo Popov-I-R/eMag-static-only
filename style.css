@@ -224,6 +224,11 @@ form.example input[type=text] {
 }
 /*Край стайлинг дивове в първи хедър*/
 
+
+
+/*Старт стайлинг дивс втори хедър*/
+
+
 .second-header {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
@@ -235,10 +240,91 @@ form.example input[type=text] {
     display: flex;
     align-items: center;
     /* padding: 10 0; */
-    min-width: 1100px;
+    min-width: 1150px;
     
 }
 
+/* .categories-active start */
 
-/*Старт стайлинк дивс втори хедър*/
+.categories-active {
+    margin-top: 5px;
+    padding: 7px;
+    background-color: white;
+    border-radius: 5px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    cursor: pointer;
+}
 
+
+
+.categories-active {
+    line-height: 20px;
+    font-weight: 600;
+    color: black
+}
+/* .categories-active end */
+
+/* navbar-left start */
+
+.navbar-left {
+    display: flex;
+    padding: 4px;
+}
+
+.navbar-left > li {
+    border: 1px solid transparent;
+    padding: 5px;
+    list-style-type: none;
+    
+}
+
+.navbar-left > li:hover {
+    
+    border: 1px solid white;
+    border-radius: 16px;
+}
+
+.navbar-left > li > a {
+    padding: 4px 10px;
+    margin: 5px 0 5px 4px;
+    color: white;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+/* .navbar-left end */
+
+.navbar-right {
+    display: flex;
+    flex-grow: 2;
+    justify-content: flex-end;
+}
+
+.navbar-right > li {
+    border: 1px solid transparent;
+    padding: 5px;
+    list-style-type: none;
+    
+}
+
+.navbar-right > li:hover {
+    
+    border: 1px solid white;
+    border-radius: 16px;
+}
+
+.navbar-right > li > a {
+    padding: 4px 10px;
+    margin: 5px 0 5px 4px;
+    color: white;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+/* .navbar-right > li > a > i {
+    font-size: 16px;
+    
+    padding: 4px;
+    
+} */
