@@ -66,6 +66,11 @@ table {
 /* Начало дефиниране на грид, основен layout */
 
 body {
+
+    font-family: "Open Sans",Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    line-height: 1.428571429;
+    color: #222222;
     background-color: #f2f2f7;
 }
 header {
@@ -78,7 +83,7 @@ header {
 
 .second-header {
     grid-area: sh;
-    height: 56px;
+    height: 40px;
     background: -webkit-linear-gradient(left,#ff1d25 5%,#a0328c 35%,#7040a4 45%,#4359c7 55%,#0082e6 70%);
     
 }
@@ -122,9 +127,118 @@ footer {
 .header-content {
     grid-column-start: 3;
     grid-column-end: 11;
-    background-color: red;
+    display: flex;
+    align-items: center;
+    padding: 10 0;
+    min-width: 1100px;
+    
+}
+
+#logo {
+    height: 35.91px;
+}
+
+/* Тук свършва wrapper-а за съдържанието на хедъра*/
+
+/*Старт стайлинг дивове в хедъра*/
+.navbar-searchbox {
+    width: 51%;
+    padding-left: 10px;
+}
+
+form.example input[type=text] {
+    
+    font-size: 15px;
+    color: #666666;
+    border: 1px solid #0082e6;
+    border-right: none;
+    border-top-left-radius: 16px;
+    border-bottom-left-radius: 16px;
+    float: left;
+    width: 87%;
+    background: transparent#f1f1f1;
+    height: 32px;
+  }
+  
+  /* Style the submit button */
+  form.example button {
+    float: left;
+    width: 8%;
+    padding: 10px;
+    background: transparent;
+    color: #0082e6;
+    font-size: 15px;
+    border: 1px solid #0082e6;
+    border-left: none; /* Prevent double borders */
+    border-top-right-radius: 16px;
+    border-bottom-right-radius: 16px;
+    cursor: pointer;
+    height: 36px;
+  }
+  
+  form.example button:hover {
+    background: #ebf5ff;
+  }
+
+  
+  /* Clear floats */
+  form.example::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+.navbar-toolbox {
+    display: flex;
+    width: 38%;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.navbar-main-btn  {
+    display: flex;
+    
+}
+
+.btn-group a {
+    text-decoration: none;
+    color: #0082e6;
+    
+}
+
+.icon {
+    font-size: 20px;
+    padding-right: 10px;
+}
+
+.accFavouriteCard {
+    display: flex;
+    
+    color: #444444
+}
+
+.accFavouriteCard > i {
+    padding-left: 4px;
+    color: #444444;
+}
+/*Край стайлинг дивове в първи хедър*/
+
+.second-header {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+}
+
+.second-header-content {
+    grid-column-start: 3;
+    grid-column-end: 11;
+    display: flex;
+    align-items: center;
+    /* padding: 10 0; */
+    min-width: 1100px;
+    
 }
 
 
+/*Старт стайлинк дивс втори хедър*/
 
-/* Тук свършва wrapper-а за съдържанието на хедъра*/
