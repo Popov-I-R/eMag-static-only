@@ -517,6 +517,8 @@ main .wrapper .banner img {
 
 /* MAIN CONTENT WITH FIXED MENU AND CAROUSEL END   */
 
+/* WIDGETS START */
+
 .widgets {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
@@ -527,16 +529,18 @@ main .wrapper .banner img {
     display: grid;
     grid-column-start: 3;
     grid-column-end: 11;
+    min-width: 1250px;
 }
 
 .widget-one:hover {
     cursor: pointer;
 }
 
+
 .widgets .widgets-wrapper .widgets-content .widget-one {
     /* background-color: ey; */
     height: 88px;
-    width: 254px;
+    width: auto;
     box-sizing: border-box;
     padding: 17px 15px 17px 25px;
 }
@@ -570,4 +574,165 @@ main .wrapper .banner img {
 
 
 
-/* START MAIN CONTENT WITH FIXED MENU AND BANNER   */
+/* WIDGETS END */
+
+/* FLASH DEALS START  */
+
+/* BANNERT START */
+
+.flash-deals {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+
+}
+
+.flash-deals .flash-deals-wrapper {
+    display: grid;
+    grid-column-start: 3;
+    grid-column-end: 11;
+    min-width: 1150px;
+}
+
+.row-layout {
+    display: flex;
+    box-sizing: border-box;
+    height: 120px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.row-layout > .cell-one, .cell-three {
+    flex-grow: 1;
+    height: 100%;
+}
+
+.row-layout > .cell-two {
+    flex-grow: 2;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.row-layout .cell-three {
+    display: flex;
+    
+    justify-content: flex-end;
+    align-items: center;
+    
+    height: 100%;
+    width: 33px;
+}
+
+.row-layout .cell-three .look-here {
+    margin-bottom: 0;
+    
+    text-align: center;
+    
+
+    cursor: pointer;
+    background-image: none;
+    background-color: #fff;
+
+    border: 1px solid transparent;
+    white-space: nowrap;
+    padding: 7px 12px;
+    
+    
+    border-radius: 3px;
+}
+
+.row-layout .cell-three .look-here a {
+    text-decoration: none;
+    color: #222222;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 20px;
+}
+.row-layout .cell-three .look-here a:hover {
+    color: #005eb8;;
+}
+
+.focus-products {
+    width: 100%;
+    height: auto;
+}
+
+/* BANNER END */
+
+/* START ITEM */
+
+.card {
+    position: relative;
+    
+}
+
+.card-badges {
+    position: absolute;
+    top: 15px;
+    left: 0;
+    width: 60px;
+    z-index: 1;
+}
+
+
+.card-item {
+    box-sizing: border-box;
+    width: 230px;
+    height: 445px;
+}
+
+.card-item .card {
+    width: 100%;
+    min-height: 395px;
+    border-radius: 4px;
+    padding: 1px;
+    background-color: #fff;
+    line-height: 19px;
+}
+.card-badges .card-v2-badge {
+    color: #fff;
+    text-align: center;
+    font-size: 12px;
+    height: 22px;
+    line-height: 22px;
+    font-weight: 600;
+    border-radius: 0;
+}
+
+.card-badges .badge-discount {
+    
+    background-image: linear-gradient(287deg,#f0280a 0%,#bc2610 100%);
+    border-bottom-right-radius: 4px;
+    border-top-right-radius: 4px;
+}
+
+
+.card .card-toolbox {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 2;
+}
+
+
+.card .card-toolbox button {
+    outline: none;
+    padding: 8px;
+    border-radius: 50%;
+    background: #fff;
+    font-size: 16px;
+    margin: 0 0 5px 0;
+    display: block;
+    border: 0;
+    line-height: 16px;
+}
+
+.card .card-toolbox button:hover {
+cursor: pointer;
+}
+
+
+
+
+
+/* FLASH DEALS END  */
