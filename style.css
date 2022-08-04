@@ -55,7 +55,7 @@ table {
     "h h h h h h h h h h h h"
     "sh sh sh sh sh sh sh sh sh sh sh sh"
     "m m m m m m m m m m m m"
-    ". . cb cb cb cb cb cb cb cb . ."
+    "w w w w w w w w w w w w"
     "fd fd fd fd fd fd fd fd fd fd fd fd"
     "co co co co co co co co co co co co"
     "f f f f f f f f f f f f";
@@ -94,8 +94,8 @@ main {
     height: 471px;
 }
 
-.categories-banner {
-    grid-area: cb;
+.widgets {
+    grid-area: w;
     background-color: #f2f2f7;
     height: 110px;
 }
@@ -408,13 +408,77 @@ form.example input[type=text] {
     
   }
 
-
-  .megamenu-list-department:hover {
-    
-    background-color: white;
-    border-top: 0.5px solid rgb(158, 153, 153);
-    border-bottom: 0.5px solid rgb(158, 153, 153);
+  .megamenu-list-department:hover  {
+    display: block;
+    background-color: #fff; 
+    border-top: 1px solid #eeeeee;
+    border-bottom: 1px solid #eeeeee;
   }
+
+
+  /* CONTENT BOX TEST FOR SIDE DROPDOWN  START */
+  .megamenu-list-department > .hover-content {
+    position: absolute;
+    margin-top: -1px;
+    margin-left: 240px;
+    display: flex;
+    width: 430%;
+    height: 457px;
+    display: none;
+    z-index: 1;
+    box-shadow: 5 0 10px -2px rgba(0,0,0,0.15);
+  }
+
+
+
+  .megamenu-list-department:hover .hover-content {
+    display: block;
+    background-color: #fff;
+    
+    
+  }
+ /* PCS HOVER  */
+
+  .megamenu-list-department > .hover-pc {
+    position: absolute;
+    margin-top: -53px;
+    margin-left: 240px;
+    display: flex;
+    width: 430%;
+    height: 457px;
+    display: none;
+    z-index: 1;
+    box-shadow: 5 0 10px -2px rgba(0,0,0,0.15);
+  }
+
+
+
+  .megamenu-list-department:hover .hover-pc {
+    display: block;
+    background-color: #fff;
+}
+     /* TV HOVER  */
+
+     .megamenu-list-department > .hover-tv {
+        position: absolute;
+        margin-top: -87px;
+        margin-left: 240px;
+        display: flex;
+        width: 430%;
+        height: 457px;
+        display: none;
+        z-index: 1;
+        box-shadow: 5 0 10px -2px rgba(0,0,0,0.15);
+      }
+    
+    
+    
+      .megamenu-list-department:hover .hover-tv {
+        display: block;
+        background-color: #fff;
+    }
+  
+ /* CONTENT BOX FOR SIDE DROPDOWN  END */
 
   .icon-categories-menu {
     
@@ -426,7 +490,7 @@ form.example input[type=text] {
 
 /* FIXED MENU END  */
 
-/* START BANNER  / MAIN CONTENT   */
+/* START CAROUSEL  / MAIN CONTENT   */
 
 main {
     display: grid;
@@ -450,3 +514,60 @@ main .wrapper .banner img {
     width: 100%;
     height: 447px;
 }
+
+/* MAIN CONTENT WITH FIXED MENU AND CAROUSEL END   */
+
+.widgets {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+
+}
+
+.widgets .widgets-wrapper {
+    display: grid;
+    grid-column-start: 3;
+    grid-column-end: 11;
+}
+
+.widget-one:hover {
+    cursor: pointer;
+}
+
+.widgets .widgets-wrapper .widgets-content .widget-one {
+    /* background-color: ey; */
+    height: 88px;
+    width: 254px;
+    box-sizing: border-box;
+    padding: 17px 15px 17px 25px;
+}
+
+.widgets .widgets-wrapper .widgets-content .widget-one .widgets-link {
+    color: #222222;
+    font-weight: 600;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.widgets .widgets-wrapper .widgets-content .widget-one .widgets-link .widgets-text {
+    height: 54px;
+    
+}
+
+.widgets .widgets-wrapper .widgets-content .widget-one .widgets-link .widgets-icons .widgets-imgs {
+    height: 54px;
+    padding-right: 15px;
+}
+
+
+.widgets .widgets-wrapper .widgets-content {
+    background-color: white;
+    height: 88px;
+    width: 100%;
+    display: flex
+    ;
+}
+
+
+
+/* START MAIN CONTENT WITH FIXED MENU AND BANNER   */
