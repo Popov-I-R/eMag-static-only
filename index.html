@@ -17,7 +17,7 @@
             </div>
             <div class="navbar-searchbox">
                 <form class="example" action="action_page.php">
-                    <input type="text" placeholder="Какво търсиш днес?" name="search" class="searchbox">
+                    <input type="text" placeholder="Какво търсиш днес?" name="search" class="searchbox" id="testsearch">
                     <button type="submit"><i class="fa-regular fa-magnifying-glass icon"></i></button>
                 </form>
             </div>
@@ -36,7 +36,6 @@
                         <span class="accFavouriteCard">Любими
                             <i class="fa-solid fa-sort-down"></i>
                         </span>
-
                     </a>
                 </div>
                 <div class="btn-group">
@@ -57,7 +56,7 @@
         <div class="second-header-content">
             <div class="categories-active">
                 <ul class="categories">
-                    <i class="fa-solid fa-bars"></i>
+                    <i class="fa-solid fa-bars icon-categories-menu"></i>
                     Категории 
                 </li>
             </div>
@@ -81,8 +80,6 @@
                     <li><a href="https://www.emag.bg/lp/corporate?ref=hdr_korporativni-klienti" title="Корпоративни клиенти">
                         Корпоративни клиенти
                     </a></li>
-                
-                
             </div>
             <div class="navbar-right">
                 <li><a href="https://www.emag.bg/razopakovani-produkti?ref=hdr_razopakovani" title="Разопаковани">
@@ -91,46 +88,123 @@
                 </a></li>
             </div>
 
-
-
-
-
-
-
-
-
-            <!-- <ul class="navbar-left">
-                <li class="categories">
-                    <i class="fa-solid fa-bars"></i>
-                    Категории </li>
-                <li><a href="https://www.emag.bg/elektricheska-trotinetka-xiaomi-mi-scooter-essential-moshtnost-na-dvigatelja-250-w-avtonomija-20-km-maksimalna-skorost-20-km-ch-cheren-fbc4022gl/pd/DP4003MBM/?ref=hdr_oferta-na-denja" title="Оферта на деня">
-                    Оферта на деня
-                </a></li>
-                <li><a href="https://s13emagst.akamaized.net/layout/bg/static-upload/0-interest-6-installments-399bgn-unicredit-bnp-1-8-08-2022.pdf?ref=hdr_vnoski-bez-oskypjavane" title="6 вноски без оскъпяване">
-                    6 вноски без оскъпяване
-                </a></li>
-                <li><a href="https://www.emag.bg/razopakovani-produkti?ref=hdr_razopakovani" title="Разопаковани">
-                    Разопаковани
-                </a></li>
-                <li><a href="https://www.emag.bg/lps/seen-on-tv-home-outdoor-01-08-08-2022?ref=hdr_vidjano-po-tv" title="Видяно по ТВ">
-                    Видяно по ТВ
-                </a></li>
-                <li><a href="https://marketplace.emag.bg/infocenter/?ref=hdr_stani-emag-tyrgovec" title="Стани eMAG търговец">
-                    Стани eMAG търговец
-                </a></li>
-                <li><a href="https://www.emag.bg/lp/corporate?ref=hdr_korporativni-klienti" title="Корпоративни клиенти">
-                    Корпоративни клиенти
-                </a></li>
-            </ul>
-            <ul class="navbar-right">
-                <a href="https://www.emag.bg/help/?ref=hdr_help" class="navbar-aux-help-link" title="eMAG Help">
-                    <i class="em em-support"></i>
-                    eMAG Help</a>
-            </ul> -->
         </div>
     </div>
-    <main>
-        <h1>hello</h1>
+
+    <!-- Секция с банер и фиксирано меню за desktop версия-->
+    
+    <main >
+        <div class="wrapper">
+            <div class="fixed-menu">
+                <ul class="megamenu-list">
+                    <li class="megamenu-list-department">
+                        <a href="#" >
+                            <i class="fa-regular fa-mobile-notch icon-categories-menu"></i>
+                            <span>Телефони, Таблети & Лаптопи</span> 
+                            
+                        </a>
+                    </li>
+
+                    <li class="megamenu-list-department">
+                        <a href="#" >
+                            <i class="fa-regular fa-computer-mouse icon-categories-menu"></i>
+                            <span>Компютри & Периферия</span> 
+                        </a>
+                    </li>
+
+                    
+                    <li class="megamenu-list-department">
+                        <a href="#" >
+                        <i class="fa-regular fa-tv icon-categories-menu"></i>
+                        <span>ТВ, Аудио & Фото</span>
+                        </a>
+                    </li>
+
+                    <li class="megamenu-list-department">
+                        <a href="#" >
+                        <i class="fa-regular fa-gamepad icon-categories-menu"></i>
+                        <span>Gaming</span>
+                        </a>
+                    </li>
+
+                    <li class="megamenu-list-department">
+                        <a href="#" >
+                        <i class="fa-regular fa-washing-machine icon-categories-menu"></i>
+                        <span>Големи електроуреди</span>
+                        </a>
+                    </li>
+
+                    <li class="megamenu-list-department">
+                        <a href="#" >
+                        <i class="fa-regular fa-microwave icon-categories-menu"></i>
+                        <span>Малки електроуреди</span>
+                        </a>
+                    </li>
+
+
+                    <li class="megamenu-list-department">
+                        <a href="#" >
+                        <i class="fa-regular fa-shirt icon-categories-menu"></i>
+                        <span>Мода</span>
+                        </a>
+                    </li>
+                    
+
+                    <li class="megamenu-list-department">
+                        <a href="#" >
+                        <i class="fa-regular fa-head-side-brain icon-categories-menu"></i>
+                        <span>Здраве и красота</span>
+                        </a>
+                    </li>
+
+
+
+                        <li class="megamenu-list-department">
+                            <a href="#" >
+                            <i class="fa-regular fa-chair-office icon-categories-menu"></i>
+                            <span>Дом, Градина & Petshop</span>
+                            </a>
+                        </li>
+
+
+
+                        <li class="megamenu-list-department">
+                            <a href="#" >
+                            <i class="fa-regular fa-teddy-bear icon-categories-menu"></i>
+                            <span>Играчки & Детски артикули</span>
+                            </a>
+                        </li>
+
+                        <li class="megamenu-list-department">
+                            <a href="#" >
+                            <i class="fa-regular fa-racquet icon-categories-menu"></i>
+                            <span>Спорт & свободно време</span>
+                            </a>
+                        </li>
+
+
+
+                        <li class="megamenu-list-department">
+                            <a href="#" >
+                            <i class="fa-regular fa-car icon-categories-menu"></i>
+                            <span>Авто & Направи си сам</span>
+                            </a>
+                        </li>
+
+
+                        <li class="megamenu-list-department">
+                            <a href="#" >
+                            <i class="fa-regular fa-books icon-categories-menu"></i>
+                            <span>Книги, Офис & Храни</span>
+                            </a>
+                        </li>
+
+            </div>
+            <div class="banner">
+                <img src="./images/45094 (1).webp" alt="banner">
+            </div>
+        </div>
+        </div>
     </main>
     <section class="categories-banner">
 
