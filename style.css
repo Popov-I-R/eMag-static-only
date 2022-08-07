@@ -827,15 +827,119 @@ cursor: pointer;
    
     box-sizing: border-box;
     height: 14px;
+    display: flex;
+    align-items: center;
 }
 
 .rating-product .fa-star-sharp, .fa-star-sharp-half-stroke {
     color: #f9bf3b;
 }
 
+.rating-product-text .average-rating {
+color: #222;
+display: inline-block;
+margin-right: 5px;
+margin-left: 8px;
+font-size: 12px;
+}
+
+.rating-product-text .reviews-counter {
+    /* display: inline-block!important; */
+    color: #888888;
+    font-size: 12px;
+    font-weight: 600;
+}
 
 
     /* Rating stars end */
+
+    /* Bottom content PCD and price start  */
+
+.bottom-content {
+    position: relative;
+    padding: 2px 0;
+    margin: 5px 10px 10px 10px;
+}
+
+.card-pricing {
+    align-items: flex-start;
+    font-weight: 600;
+    margin-right: 42px;
+}
+
+.old-priced-PCD {
+    -webkit-box-align: start;
+    align-items: flex-start;
+    font-weight: 600;
+    margin-right: 42px;
+}
+
+.old-priced-PCD > .PCD {
+    color: #888888;
+    font-size: 12px;
+}
+
+.old-priced-PCD .PCD sup {
+    top: -0.4em;
+    font-size: 65%;
+    line-height: 0;
+    position: relative;
+    margin-right: 0.1em;
+    vertical-align: baseline;
+}
+
+.new-final-price {
+    color: #ef2809;
+    font-size: 16px;
+    font-weight: 800;
+}
+
+.new-final-price sup {
+    top: -0.4em;
+    font-size: 65%;
+    line-height: 0;
+    position: relative;
+    margin-left: 0.1em;
+    vertical-align: baseline;
+}
+
+.form-action {
+    height: 100%;
+    
+}
+
+.form-action .add-to-cart {
+    height: 100%;
+    /* font-size: 0!important; */
+    position: absolute;
+    top: 0;
+    right: 0;
+    
+    text-align: right;
+    width: 42px;
+    display: block;
+    padding: 0;
+    border: 2px;
+    border-radius: 8px;
+    border-color: #3985e0;
+    overflow: hidden;
+
+    font-size: 22px;
+    display: inline-block;
+    height: 100%;
+    line-height: 42px;
+   
+    background: linear-gradient(to right,#4a60c1 10%,#3985e0);
+    
+    padding: 0;
+    width: 42px;
+}
+
+.add-to-basket .form-action .add-to-cart > i {
+    color: white;
+}
+
+
 
 
 /* FLASH DEALS END  */
