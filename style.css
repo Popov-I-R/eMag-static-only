@@ -666,7 +666,7 @@ main .wrapper .banner img {
     display: flex;
     justify-content: space-between;
     /* flex: 1 0 10px; */
-    column-gap: 3px;
+    column-gap: 5px;
 }   
 
     /* PROMO PERCENTS */
@@ -744,6 +744,7 @@ main .wrapper .banner img {
 
 .card .card-toolbox button:hover {
 cursor: pointer;
+color: #005eb8;
 }
     /* ADD TO FAVOURITES END  */
     /* INFO START / IMAGE / OFFERS ON FOCUS */
@@ -839,9 +840,21 @@ cursor: pointer;
     align-items: center;
 }
 
+.rating-product:hover {
+    cursor: pointer;
+}
+
 .rating-product .fa-star-sharp, .fa-star-sharp-half-stroke {
     color: #f9bf3b;
 }
+
+
+/* PROBA ZA SIVA ZVEZDICHKA START */
+.rating-product .fa-regular .fa-star-sharp .fa-grey {
+    color: green;
+}
+/* PROBA ZA SIVA ZVEZDICHKA END  */
+
 
 .rating-product-text .average-rating {
 color: #222;
@@ -907,7 +920,7 @@ font-size: 12px;
     font-size: 65%;
     line-height: 0;
     position: relative;
-    margin-left: 0.1em;
+    margin-left: -0.4em;
     vertical-align: baseline;
 }
 
@@ -943,6 +956,10 @@ font-size: 12px;
     width: 42px;
 }
 
+.add-to-cart:hover {
+    cursor: pointer;
+}
+
 .add-to-basket .form-action .add-to-cart > i {
     color: white;
 }
@@ -954,20 +971,363 @@ font-size: 12px;
 
 /* CATEGORIES-OFFERS START  */
         /* First category - MOBILE PHONES START  */
+
+.categories-offers {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+}
+
+.categories-offers-wrapper {
+    display: grid;
+    grid-column-start: 3;
+    grid-column-end: 11;
+    min-width: 1150px;
+    display: inline-block;
+}
+
+
 .page-section-title {
     margin-top: 20px;
     font-size: 25px;
+    height: 30px
 }
 
-.mobile-phones-container {
+
+
+
+
+/* START EDIT ITEM */
+
+
+/* Everything for edit END  */
+
+
+.products-categories {
     display: flex;
+    justify-content: space-between;
+    column-gap: 5px;
+    margin: 20px 0px 10px 0px;
+    position:relative;
+    height: 423px;
+
+
+}
+
+.card-item-v2 {
+    box-sizing: border-box;
+    width: 230px;
+    height: 400px;
+}
+
+.card-v2 {
+    position: relative;
+    box-sizing: border-box;
+    width: 230px;
+    height: 345px;
     
-    align-items: stretch;
+}
+
+.card-v2:hover {
+    box-shadow: 
+    0 2px 8px -3px rgb(0 0 0 / 25%);
+}
+
+.card-badges-v2 {
+    position: absolute;
+    top: 15px;
+    left: 0;
+    width: 60px;
+    z-index: 1;
 }
 
 
 
 
+.card-item-v2 .card-v2 {
+    width: 100%;
+    min-height: 395px;
+    border-radius: 4px;
+    padding: 1px;
+    background-color: #fff;
+    line-height: 19px;
+}
+.card-badges-v2 .card-v2-badge-v2 {
+    color: #fff;
+    text-align: center;
+    font-size: 12px;
+    height: 22px;
+    line-height: 22px;
+    font-weight: 600;
+    border-radius: 0;
+}
+
+.card-badges-v2 .badge-discount-v2 {
+    
+    background-image: linear-gradient(287deg,#f0280a 0%,#bc2610 100%);
+    border-bottom-right-radius: 4px;
+    border-top-right-radius: 4px;
+}
+
+    /* PROMO PERCENTS END */
+
+    /* ADD TO FAVOURITES START  */
+.card-v2 .card-toolbox {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 2;
+}
+
+
+
+
+.card-v2 .card-toolbox button {
+    outline: none;
+    padding: 8px;
+    border-radius: 50%;
+    background: #fff;
+    font-size: 16px;
+    margin: 0 0 5px 0;
+    display: block;
+    border: 0;
+    line-height: 16px;
+}
+
+.card-v2 .card-toolbox button:hover {
+cursor: pointer;
+color: #005eb8;
+}
+
+   /* ADD TO FAVOURITES END  */
+    /* INFO START / IMAGE / OFFERS ON FOCUS */
+
+.card-v2 .card-info {
+        width: 230px;
+        height: 336px;
+        
+        -webkit-box-flex: 1;
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+}
+    
+    .card-v2 .card-info a {
+        position: relative;
+        box-sizing: border-box;
+        max-width: 230px;
+        max-height: 311px;
+        padding-top: 5px;
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+        align-items: center;
+        justify-content: center;
+        border-radius: 4px;
+        margin-bottom: 10px;
+    
+    
+    }
+    .card-v2 .card-info a img {
+        max-width: 220px;
+        max-height: 220px;
+    }
+    
+    
+    .card-v2 .card-info a .card-badges-text {
+        position: absolute;
+        left: 0;
+        bottom: 7px;
+    }
+    
+    .card-v2 .card-info a .card-badges-text div .card-badge {
+        color: white;
+        font-weight: 600;
+        margin-bottom: 5px;
+        border-radius: 4px;
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+        padding: 2px 10px;
+        font-size: 11px;
+    }
+
+
+ .card-v2 .card-info .product-name a{
+
+        /* These are for the three dots in the product-name */
+            overflow: hidden;
+            max-width:100%;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+        /* three dots end  */
+    
+            height: 41px;
+            padding-bottom: 5px;
+            margin-bottom: 5px;
+            text-decoration: none;
+            color: inherit;
+    }
+
+
+    
+/* ARROWS START  */
+
+
+    /* LEFT */
+.left-arrow {
+    position: absolute;
+    height: 80px;
+    width: 41px;
+    left: -54px;
+    top: 197px;
+    text-decoration: none;
+
+}
+
+
+
+.left-arrow-container {
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0.6;
+    width: 100%;
+    height: 100%;
+    transform: translateY(-50%);
+    -webkit-transition: right 0.2s ease-in-out,left 0.2s ease-in-out,visibility 0.2s ease-in-out,opacity 0.1s ease-in-out;
+    transition: right 0.2s ease-in-out,left 0.2s ease-in-out,visibility 0.2s ease-in-out,opacity 0.1s ease-in-out;
+    background-color: #fff;
+    border-radius: 4px;
+    border: 1px solid rgba(0,0,0,0.1);
+}
+
+.left-arrow-container:hover {
+    cursor: pointer;
+    opacity: 1;
+    box-shadow: 
+    0px 2px 10px -2px rgb(0 0 0 / 15%);
+}
+
+
+.fa-angle-left {
+    color: #005eb8;
+    font-size: 25px;
+   
+}
+
+.fa-angle-left:hover {
+    color:#00376c;
+}
+
+    /* RIGHT ARROW  */
+    .right-arrow {
+        position: absolute;
+        height: 80px;
+        width: 41px;
+        right: -72px;
+        top: 197px;
+        text-decoration: none;
+    
+    }
+    
+    
+    
+    .right-arrow-container {
+        
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        opacity: 0.6;
+    
+        width: 100%;
+        height: 100%;
+        transform: translateY(-50%);
+        -webkit-transition: right 0.2s ease-in-out,left 0.2s ease-in-out,visibility 0.2s ease-in-out,opacity 0.1s ease-in-out;
+        transition: right 0.2s ease-in-out,left 0.2s ease-in-out,visibility 0.2s ease-in-out,opacity 0.1s ease-in-out;
+        background-color: #fff;
+        border-radius: 4px;
+        border: 1px solid rgba(0,0,0,0.1);
+    }
+    
+    .right-arrow-container:hover {
+
+        opacity: 1;
+
+        cursor: pointer;
+        box-shadow: 
+        0px 2px 10px -2px rgb(0 0 0 / 15%);
+    }
+    
+    
+    .fa-angle-right {
+        color: #005eb8;
+        
+        font-size: 25px;
+       
+    }
+    
+    .fa-angle-right:hover {
+        
+        color:#00376c;
+    }
+
+
+    /* ARROWS END */
+
+    /* DOTS START  */
+.dots-categories {
+
+    display: flex;
+    justify-content: center;
+
+    bottom: 3px;
+    position: absolute;
+    width: 100%;
+   
+
+
+    
+}
+
+.dots { 
+    cursor: pointer;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #888888;
+    margin-right: 10px;
+}
+
+.dots-demo-active {
+    cursor: pointer;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #888888;
+    margin-right: 10px;
+    background-color: #005eb8;
+}
+
+.dots:active {
+    background-color: #005eb8;
+}
+
+.dots:hover {
+    transform: scale(1.5);
+    background-color: #005eb8;
+}
+
+
+    /* DOTS END  */
+
+
+        /* IMAGE / END  */
+
+
+        /* The rest of the layout is same as the layout for "offers on focus", so i will use the classes from there.  */
+  
 
 
 
