@@ -583,6 +583,7 @@ main .wrapper .banner img {
 .flash-deals {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
+    padding-bottom: 40px;
 
 }
 
@@ -660,6 +661,13 @@ main .wrapper .banner img {
 /* BANNER END */
 
 /* START ITEM */
+
+.products {
+    display: flex;
+    justify-content: space-between;
+    /* flex: 1 0 10px; */
+    column-gap: 3px;
+}   
 
     /* PROMO PERCENTS */
 
@@ -943,3 +951,24 @@ font-size: 12px;
 
 
 /* FLASH DEALS END  */
+
+/* CATEGORIES-OFFERS START  */
+        /* First category - MOBILE PHONES START  */
+.page-section-title {
+    margin-top: 20px;
+    font-size: 25px;
+}
+
+.mobile-phones-container {
+    display: flex;
+    
+    align-items: stretch;
+}
+
+
+
+
+
+
+
+        /* First category - MOBILE PHONES END  */
