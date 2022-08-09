@@ -893,6 +893,9 @@ font-size: 12px;
     align-items: flex-start;
     font-weight: 600;
     margin-right: 42px;
+    width: 166px;
+    max-width: 166px;
+    max-height: 20px;
 }
 
 .old-priced-PCD > .PCD {
@@ -1115,7 +1118,7 @@ color: #005eb8;
         position: relative;
         box-sizing: border-box;
         max-width: 230px;
-        max-height: 311px;
+        max-height: 260px;
         padding-top: 5px;
         display: flex;
         flex-direction: column;
@@ -1331,4 +1334,42 @@ color: #005eb8;
 
 
 
-        /* First category - MOBILE PHONES END  */
+/* First category - MOBILE PHONES/ END  */
+
+#bundle-image {
+    background-image: 
+    url(./images/Categories_imgs/1.Mobile_Phones/test1.webp), 
+    url(./images/Categories_imgs/1.Mobile_Phones/test2.webp);
+
+    background-repeat: no-repeat,no-repeat;
+    background-position: left center,right center;
+    background-size: 50% auto,50% auto;
+    width: 100%;
+    height: 100%;
+    position: relative;
+        }
+
+
+/* Second category - PERFUMES/ START  */
+
+.price-per-hundred-mililitres {
+    margin: 12px 0 10px;
+    font-size: 13px;
+    width: 100%;
+
+}
+
+.price-per-hundred-mililitres .test {
+
+    top: -0.4em;
+
+    font-size: 65%;
+    line-height: 0;
+    position: relative;
+    margin-left: -0.3em;
+    vertical-align: baseline;
+}
+
+/* Second category - PERFUMES/ END  */
+
+/* Third category - NOTEBOOKS/ START  */
