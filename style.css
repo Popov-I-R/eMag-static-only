@@ -108,7 +108,8 @@ main {
 
 .categories-offers {
     grid-area: co;
-    height: 2963px;
+    /* height: 2963px; Това беше първоначалният */ 
+    height: 3500px;
     background-color: #f2f2f7;
 }
 
@@ -1372,4 +1373,173 @@ color: #005eb8;
 
 /* Second category - PERFUMES/ END  */
 
-/* Third category - NOTEBOOKS/ START  */
+/* CATEGORIES / END  */
+
+/* Phones, Tablets & Smart Section / START  */
+
+    /* TITLE SECTION START  */
+
+.page-section {
+    position: relative;
+}
+
+
+.page-section .title {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.page-section-title-bottom {
+    
+    font-size: 25px;
+    /* height: 30px; */
+
+}
+
+.title-benefits{
+
+    height: 19px;
+}
+
+.title-benefits a {
+    /* padding: 0 0 15px;
+    display: inline-block; */
+    color: #005eb8;
+    text-decoration: none;
+    background-color: transparent;
+    position: relative;
+}
+
+.title-benefits a:hover {
+    color: #00376c;
+}
+
+.title-benefits a:hover .on-hover-test {
+    
+    display: block;
+    position: absolute;
+    z-index: 1;
+}
+
+.on-hover-test{
+    
+    margin-top: 12px;
+    font-size: 12px;
+    display: none;
+    color: #222222;
+    background: #fff;
+    border: 1px solid rgba(0,0,0,0.05);
+    border-radius: 3px;
+    background-clip: padding-box;
+    box-shadow: 0 2px 20px 0px rgb(0 0 0 / 15%);
+
+    min-width: 230px;
+    max-width: 380px;
+    padding:15px 12px;
+    left: 0;
+   
+}
+
+.title-benefits .after::after {
+    content: "";
+    display: inline-block;
+    height: 15px;
+    width: 1px;
+    margin: 0 15px -3px;
+    background: #005eb8;
+}
+    /* TITLE SECTION END  */
+
+    /* CONTENT SECTION START  */
+        /* CONTENT SECTION / CATEGORIES-FIRST START  */
+
+.page-section .section-content {
+        display: flex;
+        width: 100%;
+        height: auto;
+}
+
+.panel {
+    margin-bottom: 20px;
+    background-color: #fff;
+    border: 1px solid transparent;
+    border-radius: 3px;
+    -webkit-box-shadow: 0 2px 12px -4px rgb(0 0 0 / 10%);
+    box-shadow: 0 2px 12px -4pxrgba(0,0,0,0.1);
+    position: relative;
+}
+
+.categories-first {
+    background: #f4f8fb;
+    padding: 10px 20px;
+    font-weight: bold;
+    font-size: 13px;
+    width: 300px;
+    
+}
+
+.categories-first ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.categories-first ul li {
+    margin: 6px;
+}
+
+.categories-first ul a {
+    color: #002a52;
+    text-decoration: none;
+}
+
+.categories-first ul a:hover {
+    color: #005eb8;
+    text-decoration: underline;
+}
+
+.link-title-1{
+    margin: 6px 0;
+}
+
+.link-title-2{
+    font-weight: normal;
+    margin-left: 10px;
+}
+
+            /* CONTENT SECTION / CATEGORIES-FIRST END  */
+
+            /* CONTENT SECTION / CATEGORIES-SECOND START  */
+
+.categories-second {
+    font-size: 13px;
+    border-right: 1px solid #f1f1f1;
+    width: 280px;
+}
+
+.categories-second ul {
+    list-style: none;
+    padding: 0;
+}
+
+.categories-second ul li {
+    margin: 1px 10px 1px 20px;
+}
+
+.categories-second ul li+li {
+    border-top: 1px solid #f1f1f1;
+}
+
+.categories-second ul li a {
+    color: #002a52;
+    padding: 13px 10px;
+    display: block;
+    text-decoration: none;
+}
+
+.categories-second ul li a:hover {
+    color: #002a52;
+    text-decoration: underline;
+}
