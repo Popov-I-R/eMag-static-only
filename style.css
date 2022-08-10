@@ -109,7 +109,7 @@ main {
 .categories-offers {
     grid-area: co;
     /* height: 2963px; Това беше първоначалният */ 
-    height: 3500px;
+    height: auto;
     background-color: #f2f2f7;
 }
 
@@ -996,14 +996,13 @@ font-size: 12px;
     height: 30px
 }
 
+.page-section-title-brands {
+    margin-top: 30px;
+    margin-bottom: 10px;
+    font-size: 25px;
+    height: 30px
+}
 
-
-
-
-/* START EDIT ITEM */
-
-
-/* Everything for edit END  */
 
 
 .products-categories {
@@ -1381,6 +1380,7 @@ color: #005eb8;
 
 .page-section {
     position: relative;
+    padding-bottom: 10px;
 }
 
 
@@ -1516,7 +1516,7 @@ color: #005eb8;
 .categories-second {
     font-size: 13px;
     border-right: 1px solid #f1f1f1;
-    width: 280px;
+    width: 300px;
 }
 
 .categories-second ul {
@@ -1543,3 +1543,122 @@ color: #005eb8;
     color: #002a52;
     text-decoration: underline;
 }
+
+
+
+/* CONTENT SECTION / CATEGORIES-SECOND END  */
+
+/* TOP BRANDS SECTION START  */
+    /* TOP BRANDS SECTION TITLE START  */
+
+.brands-widgets-categories {
+width: 100%;
+border: none;
+background-color: #fff;
+border-radius: 3px;
+box-shadow: 0 2px 12px -4px rgb(0 0 0 / 10%);
+position: relative;
+height: auto;
+}
+
+.brands-widgets-categories .brands-categories {
+    font-size: 13px;
+    border-bottom: 1px solid #eee;
+    box-sizing: border-box;
+    height: 50px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.brands-widgets-categories .brands-categories li {
+    float: left;
+    margin-bottom: -1px;
+}
+
+.brands-widgets-categories .brands-categories li a {
+    border-color: transparent;
+    border-top-width: 3px;
+    outline: none;
+    background-color: inherit;
+    padding: 13px 30px;
+    border-radius: 0;
+    color: #666666;
+    margin-right: 2px;
+    line-height: 20px;
+    border: 1px solid transparent;
+    text-decoration: none;
+}
+
+.brands-widgets-categories .brands-categories li a:hover {
+    color: #00376c;
+}
+
+.brands-widgets-categories .brands-categories li .active {
+    border-top-color: #005eb8;
+    border-left-color: #eee;
+    border-right-color: #eee;
+    border-bottom-color: #fff;
+    color: #005eb8;
+    pointer-events: none;   
+    box-shadow: 0 -3px 10px -5px rgb(0 0 0 / 40%);
+    border-top-width: 3px;
+    outline: none;
+    background-color: inherit;
+    cursor: default;
+}
+    /* TOP BRANDS SECTION TITLE END  */
+
+    /* TOP BRANDS CONTENT START  */
+
+
+
+
+.brands-widgets-categories .brands-logos ul {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.brands-widgets-categories .brands-logos ul li {
+    display: inline-block;
+    vertical-align: middle;
+
+    border: 1px solid transparent;
+    border-right-color: #eee;
+    width: 16.20%
+}
+
+.brands-widgets-categories .brands-logos ul li:nth-child(n+7) {
+    border-top-color: #eee;
+}
+
+.brands-widgets-categories .brands-logos ul li:nth-child(6) {
+    border-right: none;
+}
+
+.brands-widgets-categories .brands-logos ul li:nth-child(12) {
+    border-right: none;
+}
+
+.brands-widgets-categories .brands-logos ul li a {
+    display: block;
+    padding-bottom: 70%;
+    position: relative;
+    background-color: transparent;
+}
+
+.brands-widgets-categories .brands-logos ul li a img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    max-width: 50%;
+    max-height: 50%;
+}
+
+
+    /* TOP BRANDS CONTENT END  */
+
+
+
+/* TOP BRANDS SECTION END  */
