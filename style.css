@@ -1762,3 +1762,95 @@ height: auto;
     width: 100%;
     
 }
+
+
+/* Subscribe section END  */
+
+/* Sell with EMAG section START  */
+
+
+.page-section .container-partners {
+    margin-top: 9px;
+    margin-bottom: 10px;
+}
+
+.page-section .container-partners .sell-with-emag {
+    color: #ffffff;
+    overflow: hidden;
+    position: relative;
+    background: #005bc3;
+    padding: 20px 20px;
+    height: 250px
+}
+
+.page-section .container-partners .sell-with-emag img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1;
+
+}
+
+.page-section .container-partners .sell-with-emag .content-partners {
+margin-top: 20px;
+}
+
+.page-section .container-partners .sell-with-emag .content-partners .marketplace-logo {
+    position: relative;
+    max-height: 28px;
+    max-width: 260px;
+}
+
+.page-section .container-partners .sell-with-emag .content-partners h2 {
+    font-size: 32px;
+    font-family: inherit;
+    font-weight: 400;
+    line-height: 1.428571429;
+    color: inherit;
+}
+
+.page-section .container-partners .sell-with-emag .content-partners div .suggestions {
+    font-size: 16px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 10px;
+    margin-top: 7px;
+}
+
+.page-section .container-partners .sell-with-emag .content-partners div .suggestions li {
+    list-style-type: initial;
+}
+
+.page-section .container-partners .sell-with-emag .content-partners div .suggestions li strong {
+    font-weight: 700;
+}
+
+
+
+
+.page-section .container-partners .sell-with-emag .content-partners .partner-button-container {
+    margin-top: 27px;
+    max-width: 360px;
+}
+
+
+.page-section .container-partners .sell-with-emag .content-partners .partner-button-container a {
+    font-weight: 600;
+    border-radius: 24px;
+    border: 2px solid;
+    width: 315px;
+    color: #ffffff;
+    background: transparent;
+    border-color: #eb3424;
+    padding: 7px 58px;
+    font-size: 14px;
+    line-height: 20px;
+    text-decoration: none;
+}
+
+.page-section .container-partners .sell-with-emag .content-partners .partner-button-container a:hover {
+    color: #eb3424;
+    background: #ffffff;
+    border-color: #ffffff;
+}
+/* Sell with EMAG section END  */
