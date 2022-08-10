@@ -1662,3 +1662,103 @@ height: auto;
 
 
 /* TOP BRANDS SECTION END  */
+
+/* Subscribe section START  */
+
+.page-section .container-subscribe {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.page-section .container-subscribe .subscribe-newsletter {
+    position: relative;
+    margin-top: 20px;
+    min-height: 240px;
+    background: #0082e6;
+    background-image: linear-gradient(to right,#ff1d25 5%,#a0328c 35%,#7040a4 45%,#4359c7 55%,#0082e6 70%);
+}
+
+.page-section .container-subscribe .subscribe-newsletter img {
+    left: 0;
+    bottom: 0;
+    z-index: 1;
+    width: 400px;
+    position: absolute;
+}
+
+.subscribe-newsletter-content {
+    padding: 24px 50px 0 440px;
+    color: #ffffff;
+}
+
+.subscribe-newsletter-content h3 {
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 1.428571429;
+}
+
+.subscribe-newsletter-content p {
+    font-size: 85%;
+    margin: 0 0 10px;
+}
+
+.subscribe-newsletter-content .subscribe-form {
+    padding-top: 20px;
+    display: block;
+    margin-top: 0em;
+}
+
+.subscribe-newsletter-content .subscribe-form .row {
+    /* margin-left: -10px;
+    margin-right: -10px; */
+    display: flex;
+    justify-content: space-between;
+}
+
+.subscribe-newsletter-content .subscribe-form .row .form-group {
+    margin-bottom: 15px;
+    display: flex;
+    width: 30%;
+    
+}
+
+.subscribe-newsletter-content .subscribe-form .row .form-group .form-control {
+    border-radius: 25px;
+    height: 22px;
+    width: 100%;
+    padding: 5px 10px;
+    font-size: 12px;
+    line-height: 20px;
+
+    background-color: #fefefe;
+    background-image: none;
+    border: 1px solid #ccc;
+    outline: none;
+}
+
+.subscribe-newsletter-content .subscribe-form .row .form-group .form-control:focus {
+    border-color: #66afe9;
+    box-shadow: inset 0 1px 1px rgb(0 0 0 / 8%);
+}
+
+.subscribe-newsletter-content .subscribe-form .row .form-group .subscribe-button {
+    border-radius: 25px;
+    padding: 5px 10px;
+    font-size: 12px;
+    line-height: 20px;
+
+    color: #fff;
+    background-color: #ef2809;
+    border-color: #ef2809;
+
+    font-weight: 400;
+
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    background-image: none;
+
+    border: 1px solid transparent;
+    width: 100%;
+    
+}
