@@ -1995,7 +1995,7 @@ margin-top: 20px;
 
 
             /* SEND SMS END  */
-            /* BANDGE CONTAINER START  */
+            /* BADGE CONTAINER START  */
 .footer-aux .container-footer-aux .row .col .badge-container {
     max-width: 100%;
     display: flex;
@@ -2006,16 +2006,101 @@ margin-top: 20px;
     margin-right: 14px;
 }
 
-
-
-
-
-
-
-
-
-            /* BANDGE CONTAINER END  */
+            /* BADGE CONTAINER END  */
 
         /* FOOTER AUX END   */
+
+         /* FOOTER CONTENT START  */
+
+         .footer-content {
+            
+            padding: 15px 0;
+            border-top: 1px solid #e7e7e7;
+            background: #e7eff8;
+        
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            
+        }
+        
+        .footer-content .container-footer-content {
+            /* display: grid; */
+            display: flex;
+            grid-column-start: 3;
+            grid-column-end: 11;
+            min-width: 1150px;
+            
+        
+            height: auto;
+        }
+
+        .footer-content .container-footer-content .footer-content-col {
+            width: 25%;
+            float: left;
+        }
+
+        .footer-content .container-footer-content .footer-content-col a {
+            font-size: 18px;
+            margin: 0 0 21px;
+            display: block;
+            text-decoration: none;
+            color: #3959c3;
+        }
+        .footer-content .container-footer-content .footer-content-col .content-services {
+            display: block;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            color: #888888;
+        }
+
+        /* .footer-content .container-footer-content .footer-content-col .content-services .footer-item {
+
+        } */
+
+        .footer-content .container-footer-content .footer-content-col .content-services .footer-item a {
+            font-size: 14px;
+            color: #888888;
+            line-height: 1.428571429;
+            display: inline-block;
+            margin: 0 0 10px;
+        }
+
+        .footer-content .container-footer-content .footer-content-col .content-services .footer-item a:hover {
+            text-decoration: underline;
+        }
+
+        .footer-content .container-footer-content .footer-content-col .content-services .footer-item-captions .footer-link-caption .flag-icon-mastercard{
+            background-image: url(./images/captions/1.mastercard.svg);
+            font-size: 20px;
+            margin-right: 5px;
+        
+        }
+        .footer-content .container-footer-content .footer-content-col .content-services .footer-item-captions .footer-link-caption .flag-icon-maestro{
+            background-image: url(./images/captions/2.maestro.svg);
+            font-size: 20px;
+            margin-right: 5px;
+        
+        }
+
+        .footer-content .container-footer-content .footer-content-col .content-services .footer-item-captions .footer-link-caption .flag-icon-visa{
+            background-image: url(./images/captions/3.visa.svg);
+            font-size: 20px;
+        }
+
+
+
+        .flag-icon {
+            background-size: contain;
+            background-position: 50%;
+            background-repeat: no-repeat;
+            position: relative;
+            display: inline-block;
+            width: 1.35em;
+            height: 1.37em;
+            line-height: 1em;
+        }
+
+                 /* FOOTER CONTENT END  */
 
 /* MAIN FOOTER START */
