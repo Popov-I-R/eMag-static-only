@@ -8,9 +8,10 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap">
     <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.1.2/css/all.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="sticky.css">
 </head>
 <body class="main-wrapper">
-    <header class="header">
+    <header class="header sticky">
         <div class="header-content">
             <div class="navbar-logo">
                 <img id="logo" src="/images/logo.svg" alt="eMag logo">
@@ -223,6 +224,9 @@
                             <img class="widgets-imgs" src="./images/widgets/widget1.webp" alt="widget1">
                         </span>
                         <span class="widgets-text">eMag кредитна карта от Fibank</span>
+                        <div class="on-hover-test-one">
+                            <p> Пазарувай и се възползвай от предимствата на кредитна карта от eMAG и Fibank. </p>
+                         </div>
                     </a>
                 </div>
                 <div class="widget-one">
@@ -231,6 +235,9 @@
                             <img class="widgets-imgs" src="./images/widgets/widget2.webp" alt="widget1">
                         </span>
                         <span class="widgets-text">Удобни начини за доставка</span>
+                        <div class="on-hover-test-one">
+                            <p>Доставка до врата, до eMAG шоурум, в easybox или до куриерски офис</p>
+                         </div>
                     </a>
                 </div>
                 <div class="widget-one">
@@ -239,6 +246,9 @@
                             <img class="widgets-imgs" src="./images/widgets/widget3.webp" alt="widget1">
                         </span>
                         <span class="widgets-text">Проверка на пратката при доставка</span>
+                        <div class="on-hover-test-one">
+                            <p>Знаеш какво си поръчал! При доставка на пратката поискай на куриера да го отвориш за да провериш, че продуктите са точно тези, които си поръчал! Купувайки от eMAG имаш това право! </p>
+                         </div>
                     </a>
                 </div>
                 <div class="widget-one">
@@ -247,6 +257,9 @@
                             <img class="widgets-imgs" src="./images/widgets/widget4.webp" alt="widget1">
                         </span>
                         <span class="widgets-text">Проследяване на пратката в реално време</span>
+                        <div class="on-hover-test-one">
+                            <p>Целият процес на доставката на твоята поръчка може да бъде следен в твоя акаунт и в реално време може да видиш точно къде се намира твоята пратка.</p>
+                         </div>
                     </a>
                 </div>
                 <div class="widget-one">
@@ -255,6 +268,9 @@
                             <img class="widgets-imgs" src="./images/widgets/widget5.webp" alt="widget1">
                         </span>
                         <span class="widgets-text">30 дни право на безплатно връщане</span>
+                        <div class="on-hover-test-one">
+                            <p>Страх те е да пазаруваш онлайн, защото мислиш, че ако продукта не ти хареса няма да можеш да го върнеш? Това не е така! В eMAG можеш да върнеш закупеният продукт в срок от 30 дни!</p>
+                         </div>
                     </a>
                 </div>
             </div>
@@ -3781,6 +3797,20 @@
 
     </footer>
 
+    <script>
+        window.onscroll = function() {myFunction()};
+        
+        var header = document.getElementById("myHeader");
+        var sticky = header.offsetTop;
+        
+        function myFunction() {
+          if (window.pageYOffset > sticky) {
+            header.classList.add("sticky");
+          } else {
+            // header.classList.remove("sticky");
+          }
+        }
+        </script>
 
 
 </body>
