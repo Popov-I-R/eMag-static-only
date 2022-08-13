@@ -777,9 +777,64 @@ main .wrapper .banner {
     width: 100%;
 }
 
-main .wrapper .banner img {
+
+
+/* BANNER TEST CAROUSEL  */
+
+@keyframes slideLeft {
+    from,to {
+        transform: translateX(0);
+    }
+    25% {
+        transform: translateX(0);
+    }
+    30% {
+        transform: translateX(-100%);
+    }
+    55% {
+        transform: translateX(-100%);
+    }
+    60% {
+        transform: translateX(-200%);
+    }
+    85% {
+        transform: translateX(-200%);
+    }               
+}
+
+
+.wrapper .banner {
+    overflow: hidden;
+}
+
+#image-containerr {
     width: 100%;
-    height: 447px;
+    display: flex;
+    height: 100%;
+    animation: slideLeft 15s linear infinite;
+}
+
+#image-1 {
+    width: 100%;
+    flex-shrink: 0;
+    background: url("./images/banner/0.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#image-2 {
+    width: 100%;
+    flex-shrink: 0;
+    background: url("./images/banner/0.1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#image-3 {
+    width: 100%;
+    height: auto;
+    flex-shrink: 0;
+    background: url("./images/banner/0.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 /* MAIN CONTENT WITH FIXED MENU AND CAROUSEL END   */
@@ -1589,10 +1644,40 @@ color: #005eb8;
     bottom: 3px;
     position: absolute;
     width: 100%;
-   
+     
+}
+
+.dots-categories-banner {
+
+    display: flex;
+    justify-content: center;
+    bottom: 545px;
+    position: absolute;
+    width: 100%;
+    z-index: 2;
+     
+}
+
+.dots-banner { 
+    cursor: pointer;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin-right: 10px;
+    background-color: #fff;
+    border: 2px solid #005596;
+    border-radius: 50%;
+}
 
 
-    
+
+.dots { 
+    cursor: pointer;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #888888;
+    margin-right: 10px;
 }
 
 .dots { 
@@ -1614,13 +1699,36 @@ color: #005eb8;
     background-color: #005eb8;
 }
 
+.dots-banner-demo-active {
+    cursor: pointer;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: red;
+    margin-right: 10px;
+    border: 2px solid red;
+    border-radius: 50%;
+    
+}
+
 .dots:active {
+    background-color: #005eb8;
+}
+
+.dots-banner:active {
     background-color: #005eb8;
 }
 
 .dots:hover {
     transform: scale(1.5);
     background-color: #005eb8;
+}
+
+.dots-banner:hover {
+    transform: scale(1.5);
+    background-color: #fff;
+    border: 2px solid #005596;
+    border-radius: 50%;
 }
 
 
@@ -2529,3 +2637,202 @@ text-decoration: none;
     z-index: 3;
     
   }
+
+
+
+.my-account {
+position: relative;
+
+}
+
+.my-account:hover .dropdown-myAcc-header {
+    
+    display: block;
+    position: absolute;
+    width: 300px;
+    height: auto;
+    background-color: white;
+
+    padding: 10px;
+    left: -140px;
+
+}
+
+.cart {
+     top: 20px;
+    left: -170px;
+}
+
+.dropdown-myAcc-header .cart-p-container {
+        padding: 10px 15px;
+}
+
+
+.my-account .dropdown-myAcc-header{
+display: none;
+top: 20px;
+}
+
+.my-account .dropdown-myAcc-header .p-container {
+    
+    position: relative;
+    padding: 0 0 5px 50px;
+
+}
+
+.my-account .dropdown-myAcc-header .p-container .acc-profile {
+    position: absolute;
+    left: 3%;
+    font-size: 30px;
+    top: 1%;
+}
+
+.small-p {
+    font-size: 85%;
+    color: #222222;
+
+}
+
+.my-account .dropdown-myAcc-header .acc-footer {
+
+    padding: 10px 15px;
+    background-color: #f8f8f8;
+    border-top: 1px solid #eee;
+    margin: 0 -10px -10px;
+    
+}
+
+.my-account .dropdown-myAcc-header .footer-cart {
+    background-color: white;
+    margin: 0 -10px -10px;
+    border-top: none;
+}
+
+.my-account .dropdown-myAcc-header .acc-footer .acc-button {
+    cursor: pointer;
+    width: 135px;
+    height: 32px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-left: 22px;
+    color: #fff;
+    background: linear-gradient(to right,#4a60c1 10%,#3985e0);
+    border-width: 0;
+    position: relative;
+    
+}
+
+#acc-right-cart {
+    
+    height: 32px;
+    width: 37px;
+    line-height: 32px;
+    font-size: 21.3333333333px;
+    border-radius: 3px;
+    padding-right: 5px;
+    color: #fff;
+    background: #fe2d34;
+    background-image: linear-gradient(to right,#cf3f50,#fe2d34);
+    border-top-right-radius: 0% 0%!important;
+    border-bottom-right-radius: 37% 100%!important;
+    position: relative;
+    top: -6px;
+    left: -55px;  
+}
+/* cart START */
+
+
+.my-account .dropdown-myAcc-header .footer-cart .acc-button {
+    cursor: pointer;
+    width: 100%;
+    height: 32px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-left: 22px;
+    color: #fff;
+    background: linear-gradient(to right,#4a60c1 10%,#3985e0);
+    border-width: 0;
+    position: relative;
+    
+}
+
+.my-account .dropdown-myAcc-header .footer-cart .acc-button .btn-cart-text {
+    position: absolute;
+    left: 105px;
+    top: 8px;
+    
+ }
+
+ #acc-right-cart {
+    
+    height: 32px;
+    width: 37px;
+    line-height: 32px;
+    font-size: 21.3333333333px;
+    border-radius: 3px;
+    padding-right: 5px;
+    color: #fff;
+    background: #fe2d34;
+    background-image: linear-gradient(to right,#cf3f50,#fe2d34);
+    border-top-right-radius: 0% 0%!important;
+    border-bottom-right-radius: 37% 100%!important;
+    position: relative;
+    top: -6px;
+    left: -132px;  
+}
+
+/* cart END */
+
+
+.my-account .dropdown-myAcc-header .acc-footer .acc-button-2 {
+    cursor: pointer;
+    width: 135px;
+    height: 32px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-left: 22px;
+    color: #005eb8;
+    background: transparent;
+    border-width: 0;
+    position: relative;
+    
+}
+
+.my-account .dropdown-myAcc-header .acc-footer .acc-button-2:hover {
+text-decoration: underline;
+color: #00376c;
+    
+}
+
+.my-account .dropdown-myAcc-header .acc-footer .acc-button .btn-text {
+   position: absolute;
+   left: 43px;
+   top: 8px;
+   
+}
+
+.my-account .dropdown-myAcc-header .acc-footer .acc-button-2 .btn-text-2 {
+    position: absolute;
+    left: 13px;
+    top: -4px;
+}
+
+#acc-right {
+    
+    height: 32px;
+    width: 37px;
+    line-height: 32px;
+    font-size: 21.3333333333px;
+    border-radius: 3px;
+    padding-right: 5px;
+    color: #fff;
+    background: #fe2d34;
+    background-image: linear-gradient(to right,#cf3f50,#fe2d34);
+    border-top-right-radius: 0% 0%!important;
+    border-bottom-right-radius: 37% 100%!important;
+    position: relative;
+    top: -6px;
+    left: -55px;  
+}
+
+
